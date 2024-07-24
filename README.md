@@ -7,11 +7,10 @@ My desktop setting (Ubuntu, >= 20.04)
 sudo apt install zsh
 ```
 install antigen
-
-install theme
+(wget .antigen.zsh)
 ```
 # .zshrc (remain only these lines)
-source /home/geon/.antigen.zsh
+source $HOME/.antigen.zsh
 
 antigen use oh-my-zsh
 
