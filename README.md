@@ -71,3 +71,12 @@ run '~/.tmux/plugins/tpm/tpm'
 ```
 
 Install by <C-b> + I [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+
+3. host
+
+```
+sudo hostnamectl set-hostname newhostname
+sudo vim /etc/hosts # change 127.0.1.1
+```
+
+get /etc/hosts from other desktop so that aliasing could work
