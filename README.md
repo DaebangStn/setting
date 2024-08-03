@@ -1,7 +1,7 @@
 # setting
 My desktop setting (Ubuntu, >= 20.04)
 
-1. zsh
+### 1. zsh
 
 ```
 sudo apt install zsh
@@ -39,7 +39,7 @@ antigen theme robbyrussell
 antigen apply
 ```
    
-2. tmux
+### 2. tmux
 
 tmux plugin manager
 
@@ -72,7 +72,7 @@ run '~/.tmux/plugins/tpm/tpm'
 
 Install by <C-b> + I [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
-3. host
+### 3. host
 
 ```
 sudo hostnamectl set-hostname newhostname
