@@ -46,7 +46,9 @@ antigen apply
 # Set title for the Windows Terminal
 precmd() {
     echo -ne "\033]0;$(hostname)\007"
-}```
+}
+
+```
    
 ### 2. tmux
 
