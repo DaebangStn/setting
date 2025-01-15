@@ -38,8 +38,15 @@ antigen bundle zsh-users/zsh-autosuggestions
 # Load the theme.
 antigen theme robbyrussell
 
+# Prevent overriding title for the Windows Terminal
+DISABLE_AUTO_TITLE="true"
+
 antigen apply
-```
+
+# Set title for the Windows Terminal
+precmd() {
+    echo -ne "\033]0;$(hostname)\007"
+}```
    
 ### 2. tmux
 
