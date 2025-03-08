@@ -91,3 +91,32 @@ sudo vim /etc/hosts # change 127.0.1.1
 ```
 
 get /etc/hosts from other desktop so that aliasing could work
+
+
+### 4. Neovim (Lazyvim)
+
+```
+git clone --branch v0.10.4 --single-branch https://github.com/neovim/neovim
+cd neovim
+sudo apt install gettext
+make CMAKE_BUILD_TYPE=Release 
+sudo make install
+```
+
+Install the Lazyvim plugin [here](https://www.lazyvim.org/installation)
+
+```
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
+
+
+(Local only) Install the font required by terminal
+
+```
+wget -O JetBrainsMono.zip "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
+mkdir -p ~/.local/share/fonts
+unzip JetBrainsMono.zip -d ~/.local/share/fonts/
+fc-cache -fv
+fc-list | grep "JetBrainsMono"
+```
+
